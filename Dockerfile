@@ -8,6 +8,6 @@ COPY jenkins-agent /usr/local/bin/jenkins-agent
 RUN chmod +x /usr/local/bin/jenkins-agent &&\
     ln -s /usr/local/bin/jenkins-agent /usr/local/bin/jenkins-slave
 
-RUN apk update && apk add sudo makefile
+RUN apt update && apt install sudo make python -y && apt  clean all
 ENTRYPOINT ["jenkins-agent"]
 
