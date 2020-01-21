@@ -1,7 +1,7 @@
 FROM jenkins/slave:latest
 
 ARG version
-MAINTAINER Oleksiy <oleksdovz@gmail.com>
+MAINTAINER Oleksiy Dovz <oleksdovz@gmail.com>
 
 USER root
 COPY jenkins-agent /usr/local/bin/jenkins-agent
